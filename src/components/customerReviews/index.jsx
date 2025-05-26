@@ -49,7 +49,7 @@ const Customerreviews = () => {
 
                 <div className="adding-rating flex flex-col md:flex-row items-center justify-between" >
                     <h3 className='font-[500] text-xl'>Customer review</h3>
-                    <button className='bg-[#592404] mt-2 md:mt-0 w-fit hover:bg-white hover:text-[#592404] hover:border-[#592404] py-[8px] px-2 md:px-[24px] cursor-pointer text-white border-[#FFFFFFFF] border-[1px] font-[500] rounded-[3px] transition-all duration-[0.3s] ease-in-out'>
+                    <button className='bg-[#592404] mt-2 md:mt-0 w-fit hover:bg-white hover:text-[#592404] hover:border-[#592404] py-[8px] px-4 md:px-[24px] cursor-pointer text-white border-[#FFFFFFFF] border-[1px] font-[500] rounded-[3px] transition-all duration-[0.3s] ease-in-out'>
                         Add your rating
                     </button>
                 </div>

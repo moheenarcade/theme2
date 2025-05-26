@@ -111,8 +111,10 @@ const ProductDetails = () => {
             </div>
 
             <Customerreviews />
-
             <RelatedProducts />
+
+
+        
         </>
     )
 }
