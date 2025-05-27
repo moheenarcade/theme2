@@ -4,11 +4,11 @@ import React from 'react';
 import Thanksimg from "../../../public/images/thanks-msg-2-(1).svg";
 import Breadcrembs from '../../components/breadCrembs';
 
-const Checkout = () => {
+const Success = () => {
 
     return (
         <div className='checkout-main'>
-            <Breadcrembs label="Checkout"/>
+            <Breadcrembs label="Success"/>
             <div className="max-w-[1125px] mx-auto px-4 xl:px-0 mt-12 mb-20">
                 <div className="flex flex-col justify-center items-center">
                     <Image className='w-18' src={Thanksimg} alt="thank banner" />
@@ -74,4 +74,4 @@ const Checkout = () => {
     )
 }
 
-export default Checkout;
+export default Success;
