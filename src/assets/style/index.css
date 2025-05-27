@@ -232,7 +232,11 @@ body {
   box-shadow: 0 5px 20px -10px #0000001a;
  border-bottom: 1px solid rgb(240, 240, 240);
 }
-
+.image-icon-drag[data-v-360d087e] {
+  fill: #c9c8c8;
+  height: 50px;
+  width: 50px;
+}
 
 
 @media screen and (max-width: 768px) {
