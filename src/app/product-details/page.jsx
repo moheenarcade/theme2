@@ -16,7 +16,7 @@ const ProductDetails = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
         <>
-            <Breadcrembs />
+            <Breadcrembs label="Product Detail"/>
             <div className='max-w-[1125px] mx-auto px-4 xl:px-0 my-8'>
                 <div className="flex md:gap-6 flex-col lg:flex-row relative">
                     <div className="product-slideImage w-full lg:w-[50%] lg:sticky lg:top-28 self-start h-fit">

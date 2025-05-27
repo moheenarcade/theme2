@@ -265,7 +265,7 @@ const Header = () => {
                   >All Products</li>
                 </Link>
 
-                <li className='border-b-[#e5e5e5] border-b-[1px] py-3' passHref>Contact</li>
+                <li className='border-b-[#e5e5e5] border-b-[1px] py-3'>Contact</li>
               </ul>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { FiHome } from "react-icons/fi";
 import { FaChevronRight } from "react-icons/fa6";
 
 
-const Breadcrembs = () => {
+const Breadcrembs = ({ label }) => {
 
     return (
         <div className='breadcrembs-main border-b-[#f0f0f0] border-b-[1px]'>
@@ -17,7 +17,7 @@ const Breadcrembs = () => {
                         <FaChevronRight className='text-sm' />
 
                     </span>
-                    <p className='text-sm text-[#737373]'>Sports and Fitness</p>
+                    <p className='text-sm text-[#737373]'>{label}</p>
                 </div>
             </div>
         </div>
