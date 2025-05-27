@@ -9,9 +9,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useRouter } from 'next/navigation';
 import { IoClose } from "react-icons/io5";
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+  const pathname = usePathname();
   const router = useRouter();
   const [isSticky, setIsSticky] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
@@ -32,7 +33,7 @@ const Header = () => {
         { id: 4, name: "Product 4", price: "450 AED" },
       ];
 
-      setResults(mockResults); // replace with your API data
+      setResults(mockResults);
       setSearchLoading(false);
     }, 500);
   };
@@ -103,17 +104,26 @@ const Header = () => {
                 </Link>
               </div>
               <ul className='flex items-center gap-8 SMN_effect-33'>
-                <Link href="/">
-                  <li className='cursor-pointer relative hover:text-[#592404]'>
+                <Link href="/" passHref>
+                  <li className={clsx(
+                    'cursor-pointer relative hover:text-[#592404]',
+                    pathname === '/' && 'text-[#592404] active-link'
+                  )}>
                     Home
                   </li>
                 </Link>
-                <Link href="/products">
-                  <li className='cursor-pointer relative hover:text-[#592404]'>
+                <Link href="/products" passHref>
+                  <li className={clsx(
+                    'cursor-pointer relative hover:text-[#592404]',
+                    pathname === '/products' && 'text-[#592404] active-link'
+                  )}>
                     All Products
                   </li>
                 </Link>
-                <li className='cursor-pointer relative hover:text-[#592404]'>
+                <li className={clsx(
+                  'cursor-pointer relative hover:text-[#592404]',
+                  pathname === '/contact' && 'text-[#592404] active-link'
+                )}>
                   Contact us
                 </li>
               </ul>
@@ -229,25 +239,33 @@ const Header = () => {
           >
             <div className="py-4">
               <div className="flex flex-col items-center px-4 pb-4">
-                <Link href="/" onClick={() => setMobileMenu(false)}>
+                <Link href="/" onClick={() => setMobileMenu(false)} >
                   <div className="logo mx-auto">
                     <Image className='w-[65px]' src={HeaderLogo} alt='logo' />
                   </div>
                 </Link>
-                <div  className="w-full mt-4 flex items-center rounded-[3px] border-[#e5e5e5] border-[1px] px-4">
+                <div className="w-full mt-4 flex items-center rounded-[3px] border-[#e5e5e5] border-[1px] px-4">
                   <LuSearch className='text-[22px]' />
                   <input className='w-full py-3 pl-4 outline-none' type="search" placeholder='Search' />
                 </div>
               </div>
               <ul className="mt-6 px-4">
-                <Link href="/" onClick={() => setMobileMenu(false)}>
-                  <li className='border-b-[#e5e5e5] border-b-[1px] py-3'>Home</li>
+                <Link href="/" onClick={() => setMobileMenu(false)} passHref>
+                  <li className={clsx(
+                    'cursor-pointer relative border-b-[#e5e5e5] border-b-[1px] py-3 hover:text-[#592404]',
+                    pathname === '/' && 'text-[#592404] active-link'
+                  )}>Home</li>
                 </Link>
-                <Link href="/products" onClick={() => setMobileMenu(false)}>
-                  <li className='border-b-[#e5e5e5] border-b-[1px] py-3'>All Products</li>
+                <Link href="/products" onClick={() => setMobileMenu(false)} passHref>
+                  <li 
+                  className={clsx(
+                    'cursor-pointer relative border-b-[#e5e5e5] border-b-[1px] py-3 hover:text-[#592404]',
+                    pathname === '/products' && 'text-[#592404] active-link'
+                  )}
+                  >All Products</li>
                 </Link>
 
-                <li className='border-b-[#e5e5e5] border-b-[1px] py-3'>Contact</li>
+                <li className='border-b-[#e5e5e5] border-b-[1px] py-3' passHref>Contact</li>
               </ul>
             </div>
           </div>
@@ -255,75 +273,74 @@ const Header = () => {
             <div className='searchable-content relative'>
               <div className="searchbox-field  absolute w-full right-0 left-0 z-[999999]">
                 <div className="bg-[#592404] py-2 px-4">
-                <div className="max-w-[1125px] mx-auto flex items-center rounded-[3px] bg-white">
-                  <input
-                    value={searchTerm}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      setSearchTerm(value);
-                      if (value.length > 1) {
-                        setShowBox(true);
-                        fetchResults(value);
-                      } else {
-                        setShowBox(false);
-                      }
-                    }}
-                    className='h-[40px] outline-none rounded-[3px] py-2 px-4 w-full bg-white' type="search" name="search" id="search" />
-                  <div className="search cursor-pointer pr-6">
-                    <LuSearch className='text-[20px]' />
+                  <div className="max-w-[1125px] mx-auto flex items-center rounded-[3px] bg-white">
+                    <input
+                      value={searchTerm}
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        setSearchTerm(value);
+                        if (value.length > 1) {
+                          setShowBox(true);
+                          fetchResults(value);
+                        } else {
+                          setShowBox(false);
+                        }
+                      }}
+                      className='h-[40px] outline-none rounded-[3px] py-2 px-4 w-full bg-white' type="search" name="search" id="search" />
+                    <div className="search cursor-pointer pr-6">
+                      <LuSearch className='text-[20px]' />
+                    </div>
                   </div>
-                </div>
                 </div>
                 {showBox && (
-                <div className='max-w-[1125px] mx-4 relative'>
-                  <div
-                    className=" left-0 right-0 mt-0 bg-white border border-gray-200
+                  <div className='max-w-[1125px] mx-4 relative'>
+                    <div
+                      className=" left-0 right-0 mt-0 bg-white border border-gray-200
                rounded shadow-lg z-[999999] overflow-y-auto"
-                    dir={language === "ar" ? "rtl" : "ltr"}
-                    style={{ maxHeight: "400px" }}
-                  >
-                    {searchLoading ? (
-                      <div className="flex justify-center items-center py-4">
-                        <div className="lds-ellipsis" bis_skin_checked="1"><div bis_skin_checked="1"></div><div bis_skin_checked="1"></div><div bis_skin_checked="1"></div><div bis_skin_checked="1"></div></div>
-                      </div>
-                    ) : results.length ? (
-                      <ul>
-                        {results.map((item, index) => (
-                          <Link href="#">
-                            <li
-                              className="flex items-start gap-3 p-3 cursor-pointer hover:bg-gray-100"
-                              onClick={() => {
-                                setSearchTerm('');
-                                setShowBox(false);
-                              }}
-                            >
-                              <Image
-                                src={HeaderLogo}
-                                alt="product"
-                                width={60}
-                                height={60}
-                                className="rounded h-[50px] w-[50px] object-cover"
-                              />
-                              <div>
-                                <p className="text-md font-[400]">{item.name}</p>
-                                <p className="text-xs text-gray-500">{item.price}</p>
-                              </div>
-                            </li>
-                          </Link>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="p-4 text-center text-sm">{t("No data found")}</p>
-                    )}
+                      dir={language === "ar" ? "rtl" : "ltr"}
+                      style={{ maxHeight: "400px" }}
+                    >
+                      {searchLoading ? (
+                        <div className="flex justify-center items-center py-4">
+                          <div className="lds-ellipsis" bis_skin_checked="1"><div bis_skin_checked="1"></div><div bis_skin_checked="1"></div><div bis_skin_checked="1"></div><div bis_skin_checked="1"></div></div>
+                        </div>
+                      ) : results.length ? (
+                        <ul>
+                          {results.map((item, index) => (
+                            <Link href="#">
+                              <li
+                                className="flex items-start gap-3 p-3 cursor-pointer hover:bg-gray-100"
+                                onClick={() => {
+                                  setSearchTerm('');
+                                  setShowBox(false);
+                                }}
+                              >
+                                <Image
+                                  src={HeaderLogo}
+                                  alt="product"
+                                  width={60}
+                                  height={60}
+                                  className="rounded h-[50px] w-[50px] object-cover"
+                                />
+                                <div>
+                                  <p className="text-md font-[400]">{item.name}</p>
+                                  <p className="text-xs text-gray-500">{item.price}</p>
+                                </div>
+                              </li>
+                            </Link>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="p-4 text-center text-sm">{t("No data found")}</p>
+                      )}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
               </div>
-           
             </div>
           )}
         </div>
-     
+
       </div>
     </header >
   )

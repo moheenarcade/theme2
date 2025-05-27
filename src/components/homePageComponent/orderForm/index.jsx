@@ -89,7 +89,7 @@ const OrderForm = () => {
       </form>
 
 
-      <div className="bottom-cart-btns fixed bottom-0 z-[99999999999] right-0 border-y-[#f0f0f0] border-y-[1px] left-0 px-4 bg-white w-full mx-auto block lg:hidden">
+      <div className="bottom-cart-btns fixed bottom-0 z-[9] right-0 border-y-[#f0f0f0] border-y-[1px] left-0 px-4 bg-white w-full mx-auto block lg:hidden">
         <div className="flex items-center gap-2 py-4 ">
           <Link href="#cart-form" className='bg-[#592404] text-center w-full hover:bg-white hover:text-[#592404] hover:border-[#592404] py-[8px] px-2 md:px-[24px] cursor-pointer text-white border-[#FFFFFFFF] border-[1px] font-[500] mx-auto rounded-[3px] transition-all duration-[0.3s] ease-in-out'>
             Click here to order

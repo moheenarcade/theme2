@@ -73,6 +73,15 @@ body {
   transform: scaleX(1);
 }
 
+.SMN_effect-33 .active-link:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.SMN_effect-33 .active-link:before {
+  webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 .hero-swiper .swiper-pagination-bullet , .reviews-slider .swiper-pagination-bullet  {
   width: 15px !important;
   height: 15px !important;
