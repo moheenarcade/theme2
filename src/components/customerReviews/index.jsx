@@ -225,7 +225,7 @@ const Customerreviews = () => {
                                 <form onSubmit={handleSubmit}>
                                     <div className="w-full mb-2">
                                         <input
-                                            className={`w-full py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px] ${errors.email ? 'border-red-500' : ''}`}
+                                            className={`focus:outline-1 focus:outline-black w-full py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px] ${errors.email ? 'border-red-500' : ''}`}
                                             type="email"
                                             name="email"
                                             placeholder='Email'
@@ -237,7 +237,7 @@ const Customerreviews = () => {
                                     <div className="flex gap-2">
                                         <div className="w-[50%]">
                                             <input
-                                                className={`w-full py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px] ${errors.firstName ? 'border-red-500' : ''}`}
+                                                className={`focus:outline-1 focus:outline-black w-full py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px] ${errors.firstName ? 'border-red-500' : ''}`}
                                                 type="text"
                                                 name="firstName"
                                                 placeholder='First Name'
@@ -248,7 +248,7 @@ const Customerreviews = () => {
                                         </div>
                                         <div className="w-[50%]">
                                             <input
-                                                className='w-full py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px]'
+                                                className='focus:outline-1 focus:outline-black w-full py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px]'
                                                 type="text"
                                                 name="lastName"
                                                 placeholder='Last Name'
@@ -281,7 +281,7 @@ const Customerreviews = () => {
                                     </div>
                                     <div className="">
                                         <textarea
-                                            className={`w-full h-[100px] py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px] ${errors.comment ? 'border-red-500' : ''}`}
+                                            className={`focus:outline-1 focus:outline-black w-full h-[100px] py-[10px] px-[15px] border-[#e5e5e5] border-[1px] rounded-[3px] ${errors.comment ? 'border-red-500' : ''}`}
                                             name="comment"
                                             placeholder='Write a comment'
                                             value={formData.comment}

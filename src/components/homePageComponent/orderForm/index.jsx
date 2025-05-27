@@ -25,18 +25,32 @@ const OrderForm = () => {
         <div className="flex flex-col md:flex-row md:gap-4">
           <div className="flex flex-col w-full md:w-[50%] mb-[15px]">
             <label htmlFor="name" className='text-[#000000] text-[15px]'>Full Name</label>
-            <input name='name' className='p-[10px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='Full Name' />
+            <input name='name' className='focus:outline-1 focus:outline-black p-[10px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='Full Name' />
           </div>
           <div className="flex flex-col w-full md:w-[50%] mb-[15px]">
             <label htmlFor="phone" className='text-[#000000] text-[15px]'>Phone Number
             </label>
-            <input name='phone' className='p-[10px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='Phone Number' />
+            <div className="flex">
+              <input type="text" value="+971" readOnly className='focus:outline-1 focus:outline-black p-[10px] w-[60px] text-[15px] rounded-l-[5px] border-r-0 text-center border-[1px] border-[#e5e5e5]' />
+            <input name='phone' className='focus:outline-1 focus:outline-black p-[10px] w-full text-[15px] rounded-r-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='Phone Number' />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row md:gap-4">
+          <div className="flex flex-col w-full md:w-[50%] mb-[15px]">
+            <label htmlFor="state" className='text-[#000000] text-[15px]'>State</label>
+            <input name='state' className='focus:outline-1 focus:outline-black p-[10px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='State' />
+          </div>
+          <div className="flex flex-col w-full md:w-[50%] mb-[15px]">
+            <label htmlFor="city" className='text-[#000000] text-[15px]'>City
+            </label>
+            <input name='city' className='focus:outline-1 focus:outline-black p-[10px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='City' />
           </div>
         </div>
         <div className="flex flex-col w-full mb-[15px]">
-          <label htmlFor="City" className='text-[#000000] text-[15px]'>City
+          <label htmlFor="address" className='text-[#000000] text-[15px]'>Address
           </label>
-          <input name='City' className='p-[10px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' type="text" placeholder='City' />
+          <textarea name='address' className='focus:outline-1 focus:outline-black p-[10px] h-[100px] w-full text-[15px] rounded-[5px] border-[1px] border-[#e5e5e5]' placeholder='Address' />
         </div>
 
         <div className="flex items-center gap-4 mt-8 pb-4 border-b-[#f0f0f0] border-b-[1px]">
