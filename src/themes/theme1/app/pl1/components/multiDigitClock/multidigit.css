@@ -1,0 +1,123 @@
+
+
+
+.container-clock{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:0vw;
+    transition:0.8s;
+    transform:scale(0.5,0.5);
+  }
+  
+  .block_bg{
+    width:6.4vw;
+    height: 5vw;
+    position:relative;
+    margin:0.3vw;
+  }
+  
+  .clock-sec .block{
+    width:2vw;
+    height:2vw;
+    position:absolute;
+    transition:0.3s;
+    background:#ffffff;
+    box-shadow:0.1vw 0.1vw 0.2vw rgba(0,0,0,0.7),-0.1vw -0.1vw 0.2vw rgba(255,255,255,0.7) ;
+  }
+  
+  .block_bg .block:nth-child(1){
+    left:0vw;
+    top:0vw;
+  }
+  .block_bg .block:nth-child(2){
+    left:2.2vw;
+    top:0vw;
+  }
+  .block_bg .block:nth-child(3){
+    left:4.4vw;
+    top:0vw;
+  }
+  .block_bg .block:nth-child(4){
+    left:0vw;
+    top:2.2vw;
+  }
+  .block_bg .block:nth-child(5){
+    left:4.4vw;
+    top:2.2vw;
+  }
+  .block_bg .block:nth-child(6){
+    left:0vw;
+    top:4.4vw;
+  }
+  .block_bg .block:nth-child(7){
+    left:2.2vw;
+    top:4.4vw;
+  }
+  .block_bg .block:nth-child(8){
+    left:4.4vw;
+    top:4.4vw;
+  }
+  .block_bg .block:nth-child(9){
+    left:0vw;
+    top:6.6vw;
+  }
+  .block_bg .block:nth-child(10){
+    left:4.4vw;
+    top:6.6vw;
+  }
+  .block_bg .block:nth-child(11){
+    left:0vw;
+    top:8.8vw;
+  }
+  .block_bg .block:nth-child(12){
+    left:2.2vw;
+    top:8.8vw;
+  }
+  .block_bg .block:nth-child(13){
+    left:4.4vw;
+    top:8.8vw;
+  }
+
+  @media screen and (min-width : 1024px) {
+    .container-clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0vw;
+        transition: 0.8s;
+        transform: scale(0.2, 0.2);
+    }
+  }
+
+  @media screen and (min-width : 768px) and  (max-width : 1023px){
+    .container-clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0vw;
+        transition: 0.8s;
+        transform: scale(0.4, 0.4);
+    }
+  }
+
+
+  @media screen and (min-width: 2200px) {
+    .container-clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0vw;
+        transition: 0.8s;
+        transform: scale(0.1, 0.1);
+    }
+    .multi-digit-clock {
+        right: -884px ;
+        top: -68px;
+    }
+
+    .label-clock {
+        gap: 28px;
+        right: -100px;
+    }
+}

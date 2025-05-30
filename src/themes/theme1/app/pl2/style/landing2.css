@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body {
+    background: #f5f5f5;
+    font-family: "Tajawal", sans-serif;
+}
+
+@font-face {
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Tajawal Light'),local('Tajawal-Light'),url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l5qjHrRpiZtK6GwN9w.woff2) format('woff2');
+    unicode-range: U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC
+}
+
+@font-face {
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Tajawal'),local('Tajawal-Regular'),url(https://fonts.gstatic.com/s/tajawal/v3/Iura6YBj_oCad4k1nzSBC5xLhLFw4Q.woff2) format('woff2');
+    unicode-range: U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC
+}
+
+@font-face {
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Tajawal Medium'),local('Tajawal-Medium'),url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l8KiHrRpiZtK6GwN9w.woff2) format('woff2');
+    unicode-range: U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC
+}
+
+@font-face {
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Tajawal Bold'),local('Tajawal-Bold'),url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l4qkHrRpiZtK6GwN9w.woff2) format('woff2');
+    unicode-range: U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC
+}
+
+html {
+    scroll-behavior: smooth !important;
+  }
+  
+
+.service-policy {
+    padding: 14px 0px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    border: 1px solid rgb(243, 244, 248);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.icon-box {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: linear-gradient(rgb(243, 244, 248) 0%, rgb(255, 255, 255) 85.71%);
+}
+
+.product-tab-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.company-info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.product-desc img {
+margin: auto;
+width: 100%;
+}
+
+
+@media screen and (max-width: "420px") {
+    .main-price {
+        font-size: 12px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .company-info-box {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,69 @@
+{
+  "Get_it_now_before_it": "Get it now before it runs out!",
+  "Now_and_for_a_limited_time": "Now and for a limited time, take advantage of a",
+  "discount_and_free_delivery": "discount and free delivery",
+  "Tax_included_this_offer_is_limited": "Tax included, this offer is limited",
+  "To_order_please_fill_in_the_boxes_below": "To order, please fill in the boxes below",
+  "Choose_the_appropriate_offer": "Choose the appropriate offer",
+  "Confirm_Order": "Confirm Order",
+  "Seconds": "Seconds",
+  "Minutes": "Minutes",
+  "Hours": "Hours",
+  "Days": "Days",
+  "GET_UP_TO": "GET UP TO",
+  "Discount": "Discount",
+  "Most_requested": "Most requested",
+  "Buy": "Buy",
+  "Save": "Save",
+  "Your_Full_Name": "Your Full Name",
+  "Your_Email": "Your Email",
+  "Your_Phone": "Your Phone",
+  "Select_a_state": "Select a state",
+  "Select_a_city": "Select a city",
+  "Your_complete_delivery_address": "Your complete delivery address",
+  "faqs": [
+    {
+      "question": "What is your return policy?",
+      "answer": "We offer a 7-day return policy from the date of delivery. Items must be unused and in original packaging."
+    },
+    {
+      "question": "Do you offer international shipping?",
+      "answer": "Currently, we ship only within the listed countries on our website. More regions will be added soon!"
+    },
+    {
+      "question": "How can I track my order?",
+      "answer": "Once your order is shipped, you will receive an email with the tracking link."
+    },
+    {
+      "question": "Can I cancel or change my order?",
+      "answer": "Yes, you can cancel or modify your order within 1 hour of placing it. Contact support for help."
+    }
+  ],
+  "Customer_Service": "Customer Service",
+  "Free_delivery": "Free delivery",
+  "guarantee": "guarantee",
+  "Cash_on_delivery": "Cash on delivery",
+  "Why_With_Us": "Why With Us",
+  "Buy_with_full_guarantees": "Buy with full guarantees",
+  "We_offer_you_the_opportunity": "We offer you the opportunity to return items free of charge, within 30 days of the delivery date.",
+  "Enjoy_free_express_delivery": "Enjoy free express delivery for all our products to wherever you are in the Gulf countries.",
+  "This_product_after_its_global": "This product, after its global success, is now available for the first time in the Gulf countries.",
+  "Cash_on_delivery_is_supported": "Cash on delivery is supported for this product. Place your order and pay when the product arrives to you.",
+  "How_we_work": "How we work",
+  "To_avoid_any_problems_in_processing": "To avoid any problems in processing customer requests, we follow these clear steps.",
+  "We_ship_the_order_to_you": "We ship the order to you",
+  "After_confirming_the_order": "After confirming the order, it will be shipped within 1-3 business days.",
+  "You_order": "You order",
+  "Order_the_quantity_you_want": "Order the quantity you want, you will need to provide your address and contact information.",
+  "Order_now_and_pay_upon_receipt": "Order now and pay upon receipt",
+  "Your_order_has_been_successfully": "Your order has been successfully registered, thank you for choosing our store.",
+  "We_are_happy_that_you_chose_our": " We are happy that you chose our store and we hope that your experience with our products is very special. We will contact you to confirm and ship your order.",
+  "Please_answer_the_phone_to_enjoy_a_quick_shopping_experience": " Please answer the phone to enjoy a quick shopping experience  ⚠️",
+  "Application_Summary": "Application Summary",
+  "Invoice_Summary": "Invoice Summary",
+  "Customer_Name": "Customer Name",
+  "Shipping_and_handling": "Shipping and handling",
+  "Discount_coupon": "Discount coupon",
+  "Total_amount": "Total amount:"
+  
+}

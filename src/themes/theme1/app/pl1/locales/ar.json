@@ -1,0 +1,68 @@
+{
+    "Get_it_now_before_it": "احصل عليه الآن قبل نفاذ الكمية!",
+    "Now_and_for_a_limited_time": "الآن ولفترة محدودة، استفد من",
+    "discount_and_free_delivery": "الخصم والتوصيل المجاني",
+    "Tax_included_this_offer_is_limited": "شامل الضريبة، هذا العرض محدود",
+    "To_order_please_fill_in_the_boxes_below": "للطلب، يرجى ملء المربعات أدناه",
+    "Choose_the_appropriate_offer": "اختر العرض المناسب",
+    "Confirm_Order": "تأكيد الطلب",
+    "Seconds": "ثواني",
+    "Minutes": "دقائق",
+    "Days": "أيام",
+    "Hours": "ساعات",
+    "GET_UP_TO": "انهض حتى",
+    "Discount": "تخفيض",
+    "Most_requested": "الأكثر طلبا",
+    "Buy": "يشتري",
+    "Save": "يحفظ",
+    "Your_Full_Name": "اسم",
+    "Your_Email": "بريد إلكتروني",
+    "Your_Phone": "هاتفك",
+    "Select_a_state": "ولاية",
+    "Select_a_city": "مدينة",
+    "Your_complete_delivery_address": "عنوان التسليم",
+    "faqs": [
+        {
+            "question": "ما هي سياسة الإرجاع الخاصة بكم؟",
+            "answer": "نقدم سياسة إرجاع لمدة 7 أيام من تاريخ التسليم. يجب أن تكون المنتجات غير مستخدمة وفي عبوتها الأصلية."
+        },
+        {
+            "question": "هل تقدمون الشحن الدولي؟",
+            "answer": "حالياً، نشحن فقط إلى الدول المدرجة في موقعنا. سيتم إضافة المزيد من المناطق قريبًا!"
+        },
+        {
+            "question": "كيف يمكنني تتبع طلبي؟",
+            "answer": "بمجرد شحن طلبك، ستتلقى بريدًا إلكترونيًا يحتوي على رابط التتبع."
+        },
+        {
+            "question": "هل يمكنني إلغاء أو تعديل طلبي؟",
+            "answer": "نعم، يمكنك إلغاء أو تعديل الطلب خلال ساعة واحدة من إتمامه. تواصل مع الدعم للمساعدة."
+        }
+    ],
+    "Customer_Service": "خدمة العملاء",
+    "Free_delivery": "التوصيل مجاني",
+    "guarantee": "يضمن",
+    "Cash_on_delivery": "نقدا عند التسليم",
+    "Why_With_Us": "لماذا معنا",
+    "Buy_with_full_guarantees": "اشتري مع الضمانات الكاملة",
+    "We_offer_you_the_opportunity": "نحن نقدم لك فرصة إرجاع المنتجات مجانًا، خلال 30 يومًا من تاريخ التسليم.",
+    "Enjoy_free_express_delivery": "استمتع بالتوصيل السريع المجاني لجميع منتجاتنا إلى أي مكان في دول الخليج.",
+    "This_product_after_its_global": "هذا المنتج، بعد نجاحه العالمي، أصبح الآن متاحاً لأول مرة في دول الخليج.",
+    "Cash_on_delivery_is_supported": "يُدعم هذا المنتج الدفع عند الاستلام. اطلب المنتج وادفع عند وصوله إليك.",
+    "How_we_work": "كيف نعمل",
+    "To_avoid_any_problems_in_processing": "لتجنب أي مشاكل في معالجة طلبات العملاء، نتبع الخطوات الواضحة التالية.",
+    "We_ship_the_order_to_you": "نحن نرسل الطلب إليك",
+    "After_confirming_the_order": "بعد تأكيد الطلب، سيتم شحنه خلال 1-3 أيام عمل.",
+    "You_order": "أنت تأمر",
+    "Order_the_quantity_you_want": "اطلب الكمية التي تريدها، وسوف تحتاج إلى تقديم عنوانك ومعلومات الاتصال الخاصة بك.",
+    "Order_now_and_pay_upon_receipt": "اطلب الآن وادفع عند الاستلام",
+    "Your_order_has_been_successfully": "لقد تم تسجيل طلبك بنجاح، شكرًا لك على اختيار متجرنا.",
+    "We_are_happy_that_you_chose_our": "يسعدنا اختيارك لمتجرنا، ونأمل أن تكون تجربتك مع منتجاتنا مميزة. سنتواصل معك لتأكيد طلبك وشحنه.",
+    "Please_answer_the_phone_to_enjoy_a_quick_shopping_experience": " يرجى الرد على الهاتف للاستمتاع بتجربة تسوق سريعة ⚠️",
+    "Application_Summary": "ملخص التطبيق",
+    "Invoice_Summary": "ملخص الفاتورة",
+    "Customer_Name": "اسم العميل",
+    "Shipping_and_handling": "الشحن والمناولة",
+    "Discount_coupon": "قسيمة الخصم",
+    "Total_amount": "المبلغ الإجمالي:"
+}
